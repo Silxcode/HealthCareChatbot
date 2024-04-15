@@ -94,18 +94,7 @@ def getDescription():
 
 
 
-def getSeverityDict():
-    global severityDictionary
-    with open('MasterData/symptom_severity.csv') as csv_file:
 
-        csv_reader = csv.reader(csv_file, delimiter=',')
-        line_count = 0
-        try:
-            for row in csv_reader:
-                _diction={row[0]:int(row[1])}
-                severityDictionary.update(_diction)
-        except:
-            pass
 
 
 def getprecautionDict():
@@ -260,7 +249,7 @@ def tree_to_code(tree, feature_names):
             # print("confidence level is " + str(confidence_level))
 
     recurse(0, 1)
-getSeverityDict()
+
 getDescription()
 getprecautionDict()
 getInfo()
