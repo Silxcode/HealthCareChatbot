@@ -94,7 +94,7 @@ def getDescription():
 
 
 
-def getSeverityDict():
+'''def getSeverityDict():
     global severityDictionary
     with open('symptom_severity.csv') as csv_file:
 
@@ -105,7 +105,7 @@ def getSeverityDict():
                 _diction={row[0]:int(row[1])}
                 severityDictionary.update(_diction)
         except:
-            pass
+            pass '''
 
 
 def getprecautionDict():
